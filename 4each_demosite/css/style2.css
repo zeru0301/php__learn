@@ -1,0 +1,512 @@
+body {
+    /* フォントと初期のpaddingとmarginの設定 */
+    font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+    margin: 0;
+    padding: 0;
+    background-color: #d4d6d373;
+}
+
+/* リセットCSS */
+h1,
+h2,
+ul,
+li,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ヘッダー周辺 */
+
+header {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+
+}
+
+
+h1 {
+    margin: 10px 0 10px 5px;
+    font-size: 25px;
+    border-bottom: 2px solid #000000;
+    border-left: 3px solid black;
+
+}
+
+section{
+    display: flex;
+    flex-direction:column;
+    align-items:center ;
+    background-color: #f3f3f3;
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.089);
+    margin: 15px 20px;
+    padding: 15px 0;
+    border-radius: 15px;
+
+}
+
+img {
+    width: 100%;
+    z-index: 10;
+
+}
+
+
+/* ボタン */
+.btn button {
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+
+    text-align: center;
+    color: #313131;
+    /* カーソルを指差しマークにする */
+    cursor: pointer;
+    /* ボタンの背景色 */
+    background-color: rgba(57, 221, 93, 0.2);
+    /* 文字間の隙間 */
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease-out;
+    box-shadow: 2px 2px 3px 0.2px rgb(204, 204, 204);
+}
+
+/* ボタンのホバー時 */
+.btn button:hover {
+    /* ボタンの背景色 */
+    background-color: rgba(231, 231, 231, 0.76);
+    /* 文字間の隙間 */
+    letter-spacing: 0.3em;
+    border: 1px solid #727272;
+    color: rgba(148, 148, 148, 0.767);
+
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.btn button a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+
+}
+
+.btn button a:hover {
+
+    color: rgba(39, 18, 233, 0.767);
+
+}
+
+.btn2 button {
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+
+    text-align: center;
+    color: #313131;
+    /* カーソルを指差しマークにする */
+    cursor: pointer;
+    /* ボタンの背景色 */
+    background-color: rgba(229, 147, 147, 0.658);
+    /* 文字間の隙間 */
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease-out;
+    box-shadow: 2px 2px 3px 0.2px rgb(204, 204, 204);
+}
+
+/* ボタンのホバー時 */
+.btn2 button:hover {
+    /* ボタンの背景色 */
+    background-color: rgba(231, 148, 148, 0.76);
+    /* 文字間の隙間 */
+    letter-spacing: 0.3em;
+    border: 1px solid #727272;
+    color: rgba(148, 148, 148, 0.767);
+
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+
+}
+
+.btn2 {
+    margin-top: 20px;
+}
+
+.btn2 button a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+
+}
+
+.btn2 button a:hover {
+
+    color: rgba(39, 18, 233, 0.767);
+
+}
+
+
+
+/* ページトップボタン */
+
+.toTop {
+    background: rgba(0, 0, 0, 0.8);
+    width: 60px;
+    height: 60px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 2;
+    cursor: pointer;
+    /* 右下に固定 */
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    /* 最初は不透明度0 */
+    opacity: 0;
+    /* 最初は100px右に配置*/
+    transform: translateX(100px);
+    /* トランジション */
+    transition: all 0.3s;
+}
+
+.toTop:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.toTop.show {
+    opacity: 1;
+    transform: none;
+}
+
+/* navボタン */
+.carousel .nav {
+    margin: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+/* img　要素 */
+.headImg img {
+    height: auto;
+    cursor: pointer;
+    width: 60%;
+
+}
+
+
+
+/* fooder */
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    background-color: #fcfcfc;
+    margin-top: 40px;
+    padding: 15px;
+    box-shadow: -2px -2px 5px -2px darkgray;
+
+}
+
+footer p {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+footer img {
+    width: 30%;
+    margin: 5px;
+
+}
+
+footer .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+/* マルチデバイス */
+
+
+
+/*ナビゲーション*/
+.g-nav {
+    font: 30px bold;
+    color: #e7e7e7;
+
+}
+
+.g-nav li {
+    list-style: none;
+    padding: 50px;
+    border-bottom: solid;
+
+}
+
+.g-nav li a {
+    display: flex;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    justify-content: center;
+    color: antiquewhite;
+
+}
+
+.g-nav li a:hover {
+    color: rgb(240, 224, 82);
+    letter-spacing: 0.1em;
+    font: 35px bold;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+
+}
+
+/* ------------------------
+  オーバーレイ
+  ------------------------ */
+.overlay-nav {
+    /* 背景色白 */
+    background: #6da0e2c9;
+    /* 位置を固定 */
+    position: fixed;
+    top: 0;
+    /* 全画面表示 */
+    width: 100%;
+    height: 100%;
+    /* 子要素(g-nav)を中央に配置 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* 不透明度0% */
+    opacity: 0;
+    /* 自分の横幅分、右に移動 */
+    transform: translateX(100%);
+    /* 0.3秒かけて変化 */
+    transition: all 0.3s;
+    /* オーバーレイの重なり順を、mainより上、メニューボタンより下にする */
+    z-index: 99;
+
+}
+
+/* ------------------------
+  クラスshowがつくとオーバーレイ部分が表示される
+  ------------------------ */
+.overlay-nav.show {
+    /* 不透明度100% */
+    opacity: 1;
+    /* 移動なし */
+    transform: none;
+}
+
+
+
+/* ------------------------
+ハンバーガーアイコン
+------------------------ */
+/* メニューボタン */
+.menu-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e7e7e7;
+    /* 位置を固定 */
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    /* カーソルを指差しマークにする */
+    cursor: pointer;
+    /* メニューボタンの重なり順を一番上にする */
+    z-index: 399;
+
+    border: 1px solid #00000073;
+}
+
+/* 三本線の真ん中 */
+.menu-line {
+    background: #000000;
+    display: block;
+    height: 2px;
+    width: 30px;
+    position: relative;
+    /* 0.3秒かけて変化 */
+    transition: all 0.3s;
+}
+
+/* 三本線の上下 */
+.menu-line::before,
+.menu-line::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    /* 0.3秒かけて変化 */
+    transition: all 0.3s;
+}
+
+/* 三本線の上 */
+.menu-line::before {
+    top: -10px;
+    background: #000000;
+}
+
+/* 三本線の下 */
+.menu-line::after {
+    top: 10px;
+    background: #000000;
+}
+
+/* ------------------------
+  クラスactiveがつくとハンバーガーアイコンが「×」になる
+  ------------------------ */
+/* 三本線の真ん中にクラスactiveが付いたとき */
+.menu-line.active {
+    background: transparent;
+}
+
+/* 三本線の上にクラスactiveが付いたとき */
+.menu-line.active::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/* 三本線の下にクラスactiveが付いたとき */
+.menu-line.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* タブレット以上 */
+@media (min-width:768px) {
+
+    
+
+    .carousel .image-container {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .nav {
+        opacity: 0;
+    }
+
+    .box_side1 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .box_side1 dl {
+        margin-bottom: 20px;
+    }
+
+    
+
+    .exp_1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 30px;
+        background-color: rgba(221, 212, 189, 0.219);
+        border-radius: 1%;
+        box-shadow: -2px -2px -2px 1px darkgray;
+
+
+
+    }
+    .box_1 {
+        display: flex;
+        flex-direction: column; 
+        color: #000000;
+        font-size: 25px;
+        margin: 30px
+        
+         
+    }
+    
+    .box_1 form {
+        border-radius: 5%;
+        font-size: 20px bold #3b3b3b;
+        background-color: #f3f3f3;
+        box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.089);
+       padding: 15px;
+    }
+    
+    
+    
+    .box_1 .dropdown {
+        padding: 5px;
+        font-size: 20px;
+        
+    
+    }
+    
+    .box_1 input,textarea{
+        font-size: 40px;
+        
+        
+        
+    }
+    
+    .box_1 select {
+        
+        cursor: pointer;
+        
+    
+    }
+    
+    .box_1 .btn {
+        text-align: center;
+        
+    }
+    .pc_section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+    }
+    
+}
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+        integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <title>4eachプログラミングサイト</title>
+</head>
+
+<body>
+    <header>
+        <div class="headImg">
+            <a href="main.html"><img src="imgfile/4eachblog_logo.jpg" alt="4eachロゴ" class="logoimg"></a>
+        </div>
+        <div class="menu-btn">
+            <span class="menu-line"></span>
+        </div>
+        </div>
+        <div class="overlay-nav">
+            <nav class="g-nav">
+                <ul class="hidn">
+                    <li class="nav_item"><a href="main.html">トップ &gt;</a></li>
+                    <li class="nav_item"><a
+                            href="https://programmercollege.jp/lp5-3/?utm_source=bing&utm_medium=cpc&utm_campaign=brand_01&argument=wKOwHUYo&dmai=a655340c0a2856&msclkid=4afe96302fba1e29f70bf16682f49c03">4eachについて&gt;</a>
+                    </li>
+                    <li class="nav_item"><a href="commentFform.html">お問い合わせ&gt;</a></li>
+                    <li class="nav_item"><a href="https://4each.jp/form">登録フォーム&gt;</a></li>
+                    <li class="nav_item"><a href="https://4each.jp/index">会員サイトへ&gt;</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="img_mainView">
+            <img src="imgfile/office.jpg" alt="メインビュー">
+        </div>
+        <div class="pc_section">
+
+            <div class="pc_section2">
+
+                <h1>お問い合わせ</h1>
+                <div class="box_1">
+
+                    <form method="post" action="mail_confirm.php">
+
+                        <div>
+                            <label>名前</label>
+                            <br>
+                            <input type="text" size="25" name="name">
+                        </div>
+
+                        <div>
+                            <label>メールアドレス</label>
+                            <br>
+                            <input type="text" size="25" name="mail">
+                        </div>
+
+                        <div>
+                            <label>年齢</label>
+                            <br>
+                            <select class="dropdown" name="age">
+                                <option>選択してください</option>
+                                <script>
+                                    for (var i = 18; i <= 65; i++) {
+                                        document.write("<option value=" + i + ">" + i + "歳");
+                                    }
+                                </script>
+                            </select>
+                        </div>
+                        <div>
+                            <label>コメント</label>
+                            <br>
+                            <textarea cols="35" rows="7" name="comments"></textarea>
+                        </div>
+
+                        <div class="btn">
+                            <button>確認画面に移動する</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="pc_section2">
+
+                <h4>オススメの記事</h4>
+                <nav>
+                    <div class="carousel">
+                        <div class="image-container">
+
+                            <a href="#"><img src="imgfile/pic1.jpg" alt="ドメイン取得方法の画像">
+                                <p>ドメイン取得方法</p>
+                            </a>
+
+                            <a href="#"><img src="imgfile/pic2.jpg" alt="快適な職場環境の画像">
+                                <p>快適な職場環境</p>
+                            </a>
+
+                            <a href="#"><img src="imgfile/pic3.jpg" alt="Linnxの基礎の画像">
+                                <p>Linnxの基礎</p>
+                            </a>
+
+                            <a href="#"><img src="imgfile/pic4.jpg" alt="マーケティング入門の画像">
+                                <p>マーケティング入門</p>
+                            </a>
+
+                            <a href="#"><img src="imgfile/pic5.jpg" alt="アクティブラーニングの画像">
+                                <p>アクティブラーニング</p>
+                            </a>
+
+                            <a href="#"><img src="imgfile/pic6.jpg" alt="CSSの効率的な勉強法の画像">
+                                <p>CSSの効率的な勉強法</p>
+                            </a>
+
+                            <a href="#"><img src="imgfile/pic7.jpg" alt="リーダブルコードとはの画像">
+                                <p>リーダブルコードとは</p>
+                            </a>
+
+                            <a href="#"><img src="imgfile/pic8.jpg" alt="HTMLの可能性の画像">
+                                <p>HTMLの可能性</p>
+                            </a>
+
+                        </div>
+                        <div class="nav">
+                            <button class="prev">◀</button>
+                            <ol class="indicator"></ol>
+                            <button class="next">▶</button>
+                        </div>
+                    </div>
+
+                    <div class="box_side1">
+                        <dl>
+                            <dt>おすすめリンク</dt>
+                            <dd><a
+                                    href="https://programmercollege.jp/lp5-3/?utm_source=bing&utm_medium=cpc&utm_campaign=brand_01&argument=wKOwHUYo&dmai=a655340c0a2856&msclkid=4afe96302fba1e29f70bf16682f49c03">インターノウス(株)</a>
+                            </dd>
+                            <dd><a href="https://code.visualstudio.com/Download">VSCodeのDL</a></dd>
+                            <dd><a href="https://www.apachefriends.org/jp/download.html">XAMPP/MAMPのDL</a></dd>
+                            <dd><a href="https://www.eclipse.org/downloads/">EclipseのDL</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>カテゴリー</dt>
+                            <dd><a href="">HTML</a></dd>
+                            <dd><a href="">CSS</a></dd>
+                            <dd><a href="">JavaScript</a></dd>
+                            <dd><a href="">mySQL</dd>
+                            <dd><a href="">Java</a></dd>
+                        </dl>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <img src="imgfile/zeru_logo.png" alt="zeru_logo">
+            <p>copyright©zeru <br>create by zeru</p>
+        </div>
+    </footer>
+    <div class="toTop">
+        <p>△<br>上に戻る</p>
+    </div>
+
+
+</body>
+
+
+
+
+</html>
